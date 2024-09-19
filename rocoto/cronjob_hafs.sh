@@ -2,7 +2,7 @@
 set -x
 date
 
-HOMEhafs=${HOMEhafs:-/lfs/h2/emc/hur/noscrub/${USER}/save/HAFS}
+HOMEhafs=${HOMEhafs:-/work2/noaa/uswrp-uu/${USER}/software/Orion_HAFS}
 source ${HOMEhafs}/ush/hafs_pre_job.sh.inc
 
 cd ${HOMEhafs}/rocoto
@@ -20,7 +20,7 @@ opts="-t -f"
 #   config.EXPT=${EXPT} config.SUBEXPT=${EXPT} # Laura
 
 # Run one cycle of a storm
- ./run_hafs.py ${opts} 2020082512 13L HISTORY config.EXPT=${EXPT}
+ ./run_hafs.py ${opts} 2021082806 09L HISTORY config.EXPT=${EXPT}
 
 #===============================================================================
 
