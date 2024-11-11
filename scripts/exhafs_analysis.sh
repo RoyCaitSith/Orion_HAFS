@@ -338,7 +338,7 @@ COMIN_TROPICS=${COMIN_TROPICS:-${COMINtropics}/V3_AS/$PDY}
 CPREFIX=${CPREFIX:-"gdas.t${cyc}z.tropics."}
 OPREFIX=${OPREFIX:-"gfs.t${cyc}z."}
 OSUFFIX=${OSUFFIX:-""}
-CYGNSS=${CYGNSS:-${COMIN_CYG}/${CPREFIX}tm00.bufr_d}
+TROPICS=${TROPICS:-${COMIN_TROPICS}/${CPREFIX}tm00.bufr_d}
 PREPQC=${PREPQC:-${COMIN_OBS}/${OPREFIX}prepbufr${OSUFFIX}}
 PREPQCPF=${PREPQCPF:-${COMIN_OBS}/${OPREFIX}prepbufr.acft_profiles${OSUFFIX}}
 NSSTBF=${NSSTBF:-${COMIN_OBS}/${OPREFIX}nsstbufr${OSUFFIX}}
@@ -406,7 +406,7 @@ B1AVHPM=${B1AVHPM:-${COMIN_OBS}/${OPREFIX}avcspm.tm00.bufr_d${OSUFFIX}}
 ##HDOB=${HDOB:-${COMIN_OBS}/${OPREFIX}hdob.tm00.bufr_d${OSUFFIX}}
 
 # Observational data
-${WLN} $CYGNSS           cygnssbufr
+${WLN} $TROPICS           tropicsbufr
 #${NLN} $PREPQC           prepbufr
 ##${NLN} $PREPQCPF         prepbufr_profl
 ${WLN} $SATWND           satwndbufr
