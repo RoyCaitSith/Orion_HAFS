@@ -167,6 +167,8 @@ OBS_INPUT::
    saphirbufr     saphir      meghat      saphir_meghat       0.0     3     0
    ahibufr        ahi         himawari8   ahi_himawari8       0.0     3     0
    abibufr        abi         g16         abi_g16             0.0     3     0
+   abibufr        abi         g17         abi_g17             0.0     3     0
+   abibufr        abi         g18         abi_g18             0.0     3     0
 ::
 &SUPEROB_RADAR
   del_azimuth=5.,del_elev=.25,del_range=10000.,del_time=1.0,elev_angle_max=5.,minnum=1,range_max=200000.,
